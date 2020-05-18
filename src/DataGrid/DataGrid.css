@@ -1,0 +1,61 @@
+div.data-grid table caption {
+  display: none;
+}
+
+div.data-grid table thead:first-child {
+  border-bottom: 1px solid var(--color-dark);
+  border-top: 1px solid var(--color-dark) !important;
+  background: var(--color-background);
+  font-weight: normal;
+}
+
+div.data-grid table tbody.collapsed {
+  display: none;
+}
+
+div.data-grid table thead + thead,
+div.data-grid table tbody + thead {
+  border-bottom: 2px solid var(--color-dark);
+  background: var(--color-lighter);
+  font-weight: bold;
+}
+
+div.data-grid table thead tr td {
+  padding-right: 1rem;
+}
+
+div.data-grid table thead tr th + th {
+  padding-right: 0.5rem;
+}
+
+div.data-grid table thead tr th:last-child {
+  padding-right: 0;
+}
+
+div.data-grid table thead button {
+  margin: 0.5rem;
+  padding: 0.125rem 0.5rem !important;
+}
+
+div.data-grid table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+div.data-grid table tbody tr td {
+  padding-right: 0.75rem;
+}
+
+div.data-grid table tr .date,
+div.data-grid table tr .dateAndTime,
+div.data-grid table tr .input {
+  text-align: center;
+}
+
+div.data-grid table tr .currency,
+div.data-grid table tr .number {
+  text-align: right;
+}
+
+div.data-grid table tr .string {
+  text-align: left;
+}
